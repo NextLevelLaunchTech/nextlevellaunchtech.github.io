@@ -5,66 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Next Level Launch</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://nextlevellaunchtech.github.io/assets/favicon.png" />
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #111;
-      color: #fff;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
       padding: 2rem;
     }
+
     header {
       text-align: center;
-      padding-bottom: 1rem;
+      margin-bottom: 3rem;
+      animation: fadeIn 1.2s ease-out;
     }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      background: linear-gradient(to right, #00ff99, #00ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ccc;
     }
+
+    .hero {
+      background-image: url('https://nextlevellaunchtech.github.io/assets/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
+
     .button {
       display: inline-block;
       background-color: #00ff99;
       color: #000;
-      padding: 0.8rem 1.2rem;
+      padding: 1rem 1.5rem;
       margin: 1rem;
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
+      transition: all 0.3s ease-in-out;
     }
-    .products, .contact {
-      margin-top: 2rem;
+
+    .button:hover {
+      background-color: #00ccff;
+      transform: scale(1.05);
+    }
+
+    .features {
       text-align: center;
-    }
-    footer {
       margin-top: 3rem;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      font-size: 1.1rem;
+      padding: 0.5rem 0;
+    }
+
+    .products, .contact {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    footer {
+      margin-top: 4rem;
       text-align: center;
       font-size: 0.9rem;
       color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Welcome to Next Level Launch</h1>
+  <h1>Next Level Launch</h1>
   <p>Unlock next-level productivity with the smartest AI tools on the web.</p>
 </header>
 
+<div class="hero">
+  <h2 style="font-size: 2rem;">🚀 Ready to Level Up?</h2>
+  <p style="margin: 1rem 0;">Explore powerful AI tools, exclusive guides, and future-proof tech that gives you the edge.</p>
+  <a class="button" href="https://your-shopify-store.com/products/ebook" target="_blank">📘 Buy the Ebook – $17</a>
+  <a class="button" href="https://your-affiliate-link.com" target="_blank">⚡ Smartest AI Tool</a>
+</div>
+
+<section class="features">
+  <h2>Why Join Next Level Launch?</h2>
+  <ul>
+    <li>✅ Future-proof your success with cutting-edge AI</li>
+    <li>📚 Exclusive ebooks and digital guides</li>
+    <li>🧠 Learn automation, productivity, and passive income</li>
+    <li>🌐 Free tools, resources, and community access</li>
+  </ul>
+</section>
+
 <div class="products">
-  <a class="button" href="https://your-shopify-store.com/products/ebook" target="_blank">Buy the Ebook – $17</a>
-  <a class="button" href="https://your-affiliate-link.com" target="_blank">Smartest AI Tool</a>
+  <h2 style="margin-bottom: 1rem;">🔥 Featured Products</h2>
+  <a class="button" href="https://your-shopify-store.com/products/ebook" target="_blank">Ebook: Boost Productivity</a>
+  <a class="button" href="https://your-affiliate-link.com" target="_blank">Top AI Tool</a>
 </div>
 
 <div class="contact">
-  <h2>Contact</h2>
-  <p>Questions? Reach out at: <a href="mailto:NextLevelLaunch@outlook.com">NextLevelLaunch@outlook.com</a></p>
+  <h2>📩 Contact</h2>
+  <p>Questions? Reach out at <a href="mailto:NextLevelLaunch@outlook.com">NextLevelLaunch@outlook.com</a></p>
 </div>
 
 <footer>
-  <p>Copyright © 2025 Next Level Launch</p>
+  <p>Copyright © 2025 Next Level Launch. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
+
