@@ -1,0 +1,16 @@
+title: Next Level Launch
+email: info@nextlevellaunch.com
+description: AI courses, eBooks, and expert insights for ambitious founders
+baseurl: "" # or "/repo-name" if not on root
+url: "https://nextlevellaunch.github.io"
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
