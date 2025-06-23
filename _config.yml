@@ -1,16 +1,58 @@
+# Site settings
 title: Next Level Launch
-email: info@nextlevellaunch.com
-description: AI courses, eBooks, and expert insights for ambitious founders
-baseurl: "" # or "/repo-name" if not on root
-url: "https://nextlevellaunch.github.io"
+description: >-
+  AI courses, eBooks, in-depth blog articles, and Top 10 tool roundups under
+  Next Level Launch LLC (Erickson Enterprise Holdings, Inc.).
+url: "https://nextlevellaunch.github.io" # your production URL
+baseurl: "" # leave blank if published at the root of the domain
 
+# Theme & plugins
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-feed        # RSS feed
+  - jekyll-seo-tag     # SEO tags for head
 
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:name/
+
+# Defaults for front-matter
 defaults:
+  # Default layout for all pages (md files at root)
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
+  # Default layout for posts in the posts collection
+  - scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"
+
+# Permalinks
+permalink: /:collection/:name/
+
+# Exclude these from the build
+exclude:
+  - README.md
+  - LICENSE
+  - .github
+  - node_modules
+  - vendor
+
+# Build settings
+lsi: false
+future: true
+show_drafts: false
+
